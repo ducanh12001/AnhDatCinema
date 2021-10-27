@@ -1,0 +1,98 @@
+.banner {
+    max-width: 100%;
+    height:max-content;
+}
+*{
+  font-family: sans-serif,Arial, Helvetica, sans-serif;
+}
+.ul_check {
+    display: flex;
+    flex-direction: row;
+}
+.nav_item{
+    width: 100px;
+}
+.hover {
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 60%;
+  }
+  
+  .hover-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 90;
+    transition: all 0.4s;
+  }
+  
+  .hover img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.3s;
+  }
+  
+  .hover2-noidung {
+    position: relative;
+    z-index: 99;
+  }
+  
+  .hover-2 .hover-overlay {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1));
+  }
+  
+  .hover-2-tieude {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    z-index: 99;
+    transition: all 0.3s;
+  }
+  
+  .hover-2-trichdan {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    left: 0;
+    text-align: center;
+    z-index: 99;
+    transition: all 0.3s;
+  }
+  
+  .hover-2:hover .hover-2-tieude {
+    transform: translateY(-1.5rem);
+  }
+  
+  .hover-2:hover .hover-2-trichdan {
+    bottom: 0.5rem;
+    opacity: 1;
+  }
+  
+  .hover-2:hover .hover-overlay {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1));
+  }
+  .iconapp p{
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  #text{
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    font-family: 'Lucida Sans';
+    color:black;
+    font-size: 1.2rem;
+}
+#text:after{
+    display: block;
+    content:'';
+    width: 50px;
+    height: 2px;
+    background-color: #f26b38;
+}

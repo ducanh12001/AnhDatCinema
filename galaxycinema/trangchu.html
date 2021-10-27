@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="./style_trangchu.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/734ddf914f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div>
+        <div class="header p-5 bg-light text-black" style="align-items: center; text-align: center;">
+          <div class="row">
+            <div class="col-sm-8 col-md-8 text-light">
+              <img style="float: left; height: 3rem;"  src="images/galaxy-logo.png">
+            </div>
+            <div class="col-sm-2 ">
+             <div style="position: relative;">
+              <i class="fas fa-search" style="position:absolute;z-index: 99;right: 3px; top: 10px;"></i>
+              <input style="float: right;position: relative; z-index: 1;"class="form-control" type = "text" placeholder="tìm kiếm...">
+             </div>
+            </div>
+            <div class="col-sm-2" style="font-family:monospace">
+              <i class="fas fa-user" style="float: rigth;margin-right: 1rem;"></i>
+              <a href="#" style="font-family:cursive;text-decoration: none;">đăng nhập</a> 
+              <a href="#" style="color: rgb(255, 208, 0);font-family:cursive;">VN</a>
+              <a href="#" style="font-family:cursive;">|VI</a>
+            </div>
+          </div>
+        </div>
+        <div>
+            <nav class="navbar navbar-expand-lg bg-dark  nav_check" style="text-align: center;">
+                <div class="container-fluid row">
+                    <ul class="navbar-nav ul_check ">
+                        <li class="nav-item col-sm-2">
+                            <a class="nav-link" href="#">Mua vé</a>
+
+                        </li>
+                        <li class="nav-item col-sm-2">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Phim</a>
+                            <ul class="dropdown-menu bg-light text-primary">
+                                <li><a class="dropdown-item" href="#">Phim đang chiếu</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#">Phim sắp chiếu</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown col-sm-2">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Góc điện</a>
+                            <ul class="dropdown-menu bg-light text-primary">
+                                <li><a class="dropdown-item" href="#">Thể loại phim</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#">Diễn viên</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#">Đạo diễn</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#">Bình luận phim</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#">Blog điện ảnh</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item col-sm-2 ">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Sự kiện</a>
+                            <ul class="dropdown-menu bg-light text-primary">
+                                <li><a class="dropdown-item" href="#">Ưu đãi</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#">Phim hay tháng</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item col-sm-2">
+                            <a class="nav-link" href="#">Rạp/Giá vé</a>
+                        </li>
+                        <li class="nav-item col-sm-2">
+                            <a class="nav-link" href="#">Hỗ trợ</a>
+                        </li>
+                        <li class="nav-item col-sm-2">
+                            <a class="nav-link" href="#">Thành viên</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./images/banner1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/banner2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/banner3.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="main_film container">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3 col-sm-3 mb-3 mb-lg-0">
+                <div class="hover hover-2 text-white rounded" style="height:10rem"><img src="./images/film/vung_dat_cam_lang.jpg" alt="">
+                  <div class="hover-overlay"></div>
+                  <div class="hover-2-noidung px-5 py-4">
+                    <h3 class="hover-2-tieude text-uppercase font-weight-bold mb-0"> <span class="font-weight-light">Vùng đất câm lặng </span></h3>
+                    <div class="hover-2-trichdan font-weight-light mb-0">
+                      <p>Thể loại phim gì đó</p>
+                      <button class="btn btn-outline-light">Xem</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-3 mb-3 mb-lg-0">
+                <div class="hover hover-2 text-white rounded" style="height:10rem"><img src="./images/film/eternals.jpg" alt="">
+                  <div class="hover-overlay"></div>
+                  <div class="hover-2-noidung px-5 py-4">
+                    <h3 class="hover-2-tieude text-uppercase font-weight-bold mb-0"> <span class="font-weight-light">Eternals </span></h3>
+                    <div class="hover-2-trichdan font-weight-light mb-0">
+                      <p>Thể loại phim gì đó</p>
+                      <button class="btn btn-outline-light">Xem</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-3 mb-3 mb-lg-0">
+                <div class="hover hover-2 text-white rounded" style="height:10rem"><img src="./images/film/chuyen_ma.jpg" alt="">
+                  <div class="hover-overlay"></div>
+                  <div class="hover-2-noidung px-5 py-4">
+                    <h3 class="hover-2-tieude text-uppercase font-weight-bold mb-0"> <span class="font-weight-light">chuyện ma gần nhà</span></h3>
+                    <div class="hover-2-trichdan font-weight-light mb-0">
+                      <p>Thể loại phim gì đó</p>
+                      <button class="btn btn-outline-light">Xem</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-3 mb-3 mb-lg-0">
+                <div class="hover hover-2 text-white rounded" style="height:10rem"><img src="./images/film/1350x900_1619669452606.jpg" alt="">
+                  <div class="hover-overlay"></div>
+                  <div class="hover-2-noidung px-5 py-4">
+                    <h3 class="hover-2-tieude text-uppercase font-weight-bold mb-0"> <span class="font-weight-light">Great White</span></h3>
+                    <div class="hover-2-trichdan font-weight-light mb-0">
+                      <p>Thể loại phim gì đó</p>
+                      <button class="btn btn-outline-light">Xem</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div style="height: 3rem;"></div>
+            <div class="row">
+              <div class="col-md-3 col-sm-3 mb-3 mb-lg-0">
+                <div class="hover hover-2 text-white rounded" style="height:10rem"><img src="./images/film/cruella.jpg" alt="">
+                  <div class="hover-overlay"></div>
+                  <div class="hover-2-noidung px-5 py-4">
+                    <h3 class="hover-2-tieude text-uppercase font-weight-bold mb-0"> <span class="font-weight-light">CRUELLA </span></h3>
+                    <div class="hover-2-trichdan font-weight-light mb-0">
+                      <p>Thể loại phim gì đó</p>
+                      <button class="btn btn-outline-light">Xem</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="khuyenmai container">
+          <h1 href="#" id="text" style="color:orange">TIN KHUYẾN MÃI</h1>
+          <div class="image_khuyenmai">
+            <div class="row">
+              <div class="col-md-3 col-sm-3 mb-3 mb-lg-0" >
+                <div class="hover hover-2 text-white rounded " style="height: 25rem;"><img src="./images/khuyen_mai/miloday.jpg" alt="">
+                  <div class="hover-overlay"></div>
+                  <div class="hover-2-noidung px-5 py-4">
+                    <h3 class="hover-2-trichdan text-uppercase font-weight-bold mb-0" style="top: 1rem;"> <span class="font-weight-light"> Ngày Thành viên-Milo Day </span>
+                      <p class="font-weigth-light" style="font-size: 0.9rem;">Bước sang năm mới, Galaxy dành tặng các Stars thêm một ngày tràn đầy “yêu thương” – Milo Day.</p>
+                    </h3>
+                    <div class="hover-2-trichdan font-weight-light mb-0">
+                      <button class="btn btn-outline-warning text-danger">Chi tiết</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-3 mb-3 mb-lg-0" >
+                <div class="hover hover-2 text-white rounded " style="height: 25rem;"><img src="./images/khuyen_mai/qr_code.jpg" alt="">
+                  <div class="hover-overlay"></div>
+                  <div class="hover-2-noidung px-5 py-4">
+                    <h3 class="hover-2-trichdan text-uppercase font-weight-bold mb-0" style="top: 1rem;"> <span class="font-weight-light">Ứng Dụng Galaxy: Chọn Lối Đi Riêng, Vào Thẳng Rạp Phim</span>
+                      <p class="font-weigth-light" style="font-size: 0.9rem;">
+                        Galaxy Cinema ra mắt app mới, việc đặt vé online 
+                        <b>dễ dàng</b>
+                        hơn bao giờ hết. Chỉ với một thao tác nhỏ là các Stars có thể đến thẳng phòng chiếu xem phim 
+                        <b>ngay lập tức</b>
+                      </p>
+                    </h3>
+                    <div class="hover-2-trichdan font-weight-light mb-0">
+                      <button class="btn btn-outline-warning text-danger">Chi tiết</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-3 mb-3 mb-lg-0" >
+                <div class="hover hover-2 text-white rounded " style="height: 25rem;"><img src="./images/khuyen_mai/thang5.jpg" alt="">
+                  <div class="hover-overlay"></div>
+                  <div class="hover-2-noidung px-5 py-4">
+                    <h3 class="hover-2-trichdan text-uppercase font-weight-bold mb-0" style="top: 1rem;"> <span class="font-weight-light"> Ngày Tri ân</span>
+                      <p class="font-weigth-light" style="font-size: 0.9rem;">Từ lâu, chương trình Ngày Tri Ân Nhằm tạo điều kiện thuận lợi hơn cho các khách hàng thả ga xem phim đã trở nên quen thuộc với các khách hàng thân yêu của Galaxy Cinema.</p>
+                    </h3>
+                    <div class="hover-2-trichdan font-weight-light mb-0">
+                      <button class="btn btn-outline-warning text-danger">Chi tiết</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-3 mb-3 mb-lg-0" >
+                <div class="hover hover-2 text-white rounded " style="height: 25rem;"><img src="./images/khuyen_mai/ve.png" alt="">
+                  <div class="hover-overlay"></div>
+                  <div class="hover-2-noidung px-5 py-4">
+                    <h3 class="hover-2-trichdan text-uppercase font-weight-bold mb-0" style="top: 1rem;"> <span class="font-weight-light"> Galaxy-Cinema Tri ân thành viên</span>
+                      <p class="font-weigth-light" style="font-size: 0.9rem;"></p>
+                    </h3>
+                    <div class="hover-2-trichdan font-weight-light mb-0">
+                      <button class="btn btn-outline-warning text-danger">Chi tiết</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="gioithieu container">
+          <h1 href="#" id="text" style="color:orange">GIỚI THIỆU VỀ CINEMA</h1>
+          <div class="row content-seo">
+            <div class="col-md-12">
+                <div class="content-text">
+                    <p style="margin-top:0in; margin-right:0in; margin-bottom:10.0pt; margin-left:0in; text-align:justify"><span style="font-size:12pt"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"><a href="https://www.galaxycine.vn/"><b><span style="font-size:10.5pt"><span style="font-family:&quot;Cambria&quot;,&quot;serif&quot;">Galaxy Cinema</span></span>
+                        </b>
+                        </a><span style="font-size:10.5pt"><span style="font-family:&quot;Cambria&quot;,&quot;serif&quot;">&nbsp;là một trong những công ty tư nhân đầu tiên về điện ảnh được thành lập từ năm 2003, đã khẳng định thương hiệu là 1 trong 10 địa điểm vui chơi giải trí được yêu thích nhất. Ngoài hệ thống rạp chiếu phim hiện đại, thu hút hàng triệu lượt người đến xem, <a href="https://www.galaxycine.vn/"><b>Galaxy Cinema</b></a> còn hấp dẫn khán giả bởi không khí thân thiện cũng như chất lượng dịch vụ hàng đầu.</span></span>
+                        </span>
+                        </span>
+                    </p>
+        
+                    <p style="margin-top:0in; margin-right:0in; margin-bottom:10.0pt; margin-left:0in; text-align:justify">
+                        <span style="font-size:12pt"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">
+                         <span style="font-size:10.5pt">
+                            <span style="font-family:&quot;Cambria&quot;,&quot;serif&quot;">Đến website <a href="https://www.galaxycine.vn/"><i>galaxycine.vn</i></a>, quý khách sẽ được cập nhật nhanh chóng các <a href="https://www.galaxycine.vn/phim-dang-chieu"><i>phim hay nhất</i></a> <a href="https://www.galaxycine.vn/phim-dang-chieu"><i>phim mới nhất</i></a> đang chiếu hoặc sắp chiếu. <a href="https://www.galaxycine.vn/lich-chieu"><i>Lịch chiếu</i></a> tại mọi hệ thống <a href="https://www.galaxycine.vn/"><i>rạp chiếu phim</i> </a>của <a href="https://www.galaxycine.vn/"><b>Galaxy Cinema</b></a> cũng được cập nhật đầy đủ hàng ngày hàng giờ trên<i> trang chủ</i>. </span>
+                        </span>
+                        </span>
+                        </span>
+                    </p>
+        
+                    <p style="margin-top:0in; margin-right:0in; margin-bottom:10.0pt; margin-left:0in; text-align:justify"><span style="font-size:12pt"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"><span style="font-size:10.5pt"><span style="font-family:&quot;Cambria&quot;,&quot;serif&quot;">Đặt vé tại <b><a href="https://www.galaxycine.vn/">Galaxy Cinema</a> </b>dễ dàng chỉ sau vài thao tác vô cùng đơn giản. Để mua vé, hãy vào tab Mua vé. Quý khách có thể chọn Mua vé theo phim, theo rạp, theo ngày tùy cách nào tiện lợi nhất cho bản thân.Sau đó, tiến hành mua vé theo các bước hướng dẫn. Chỉ trong vài phút, quý khách sẽ nhận được tin nhắn và email phản hồi <i>Đặt vé thành công</i> của <a href="https://www.galaxycine.vn/"><b>Galaxy Cinema</b></a>. Quý khách có thể dùng tin nhắn lấy vé tại quầy vé của<a href="https://www.galaxycine.vn/"> <b>Galaxy Cinema</b></a> hoặc quét mã QR để một bước vào rạp mà không cần tốn thêm bất kỳ công đoạn nào nữa.</span></span>
+                        </span>
+                        </span>
+                    </p>
+        
+                    <p style="margin-top:0in; margin-right:0in; margin-bottom:10.0pt; margin-left:0in; text-align:justify"><span style="font-size:12pt"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"><span style="font-size:10.5pt"><span style="font-family:&quot;Cambria&quot;,&quot;serif&quot;">Nếu bạn đã chọn được <a href="https://www.galaxycine.vn/phim-dang-chieu"><i>phim hay</i></a> để xem, hãy đặt vé cực nhanh bằng box <i>Mua Vé Nhanh</i> ngay từ <a href="https://www.galaxycine.vn/"><i>Trang Chủ</i></a>. Chỉ cần một phút, tin nhắn và email phản hồi của <b><a href="https://www.galaxycine.vn/">Galaxy Cinema</a> </b>sẽ gửi ngay vào điện thoại và hộp mail của bạn. </span></span>
+                        </span>
+                        </span>
+                    </p>
+        
+                    <p style="margin-top:0in; margin-right:0in; margin-bottom:10.0pt; margin-left:0in; text-align:justify"><span style="font-size:12pt"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"><span style="font-size:10.5pt"><span style="font-family:&quot;Cambria&quot;,&quot;serif&quot;">Nếu chưa quyết định sẽ xem <i>phim mới</i> nào, hãy tham khảo các bộ<a href="https://www.galaxycine.vn/phim-dang-chieu"> <i>phim hay</i></a> trong mục<a href="https://www.galaxycine.vn/phim-dang-chieu"> <i>Phim Đang Chiếu</i></a> cũng như <a href="https://www.galaxycine.vn/phim-sap-chieu"><i>Phim Sắp Chiếu</i> </a>tại <a href="https://www.galaxycine.vn/"><i>rạp chiếu phim</i></a> bằng cách vào mục <a href="https://www.galaxycine.vn/binh-luan-phim"><i>Bình Luận Phim</i></a> ở <i><a href="http://beta.galaxycine.vn/dien-anh">Góc Điện Ảnh</a> </i>để đọc những bài bình luận chân thật nhất, tham khảo và cân nhắc. Sau đó, quý khách hãy đặt vé bằng box <i>Mua Vé Nhanh</i> ngay ở đầu trang để chọn được suất chiếu và chỗ ngồi vừa ý nhất. &nbsp;</span></span>
+                        </span>
+                        </span>
+                    </p>
+        
+                    <p style="margin-top:0in; margin-right:0in; margin-bottom:10.0pt; margin-left:0in; text-align:justify"><span style="font-size:12pt"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"><a href="https://www.galaxycine.vn/"><b><span style="font-size:10.5pt"><span style="font-family:&quot;Cambria&quot;,&quot;serif&quot;">Galaxy Cinema</span></span>
+                        </b>
+                        </a><span style="font-size:10.5pt"><span style="font-family:&quot;Cambria&quot;,&quot;serif&quot;"> luôn có những chương trình<a href="https://www.galaxycine.vn/khuyen-mai"> <i>khuyến mãi</i>, <i>ưu đãi</i></a>, quà tặng vô cùng hấp dẫn như <i>giảm giá</i> vé, tặng vé xem phim miễn phí, tặng Combo, tặng quà phim… &nbsp;dành cho quý khách. </span></span>
+                        </span>
+                        </span>
+                    </p>
+        
+                    <p style="margin-top:0in; margin-right:0in; margin-bottom:10.0pt; margin-left:0in; text-align:justify"><span style="font-size:12pt"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"><span style="font-size:10.5pt"><span style="font-family:&quot;Cambria&quot;,&quot;serif&quot;">Trang web <i>galaxycine.vn</i> còn có mục <i>Góc Điện Ảnh</i> - sở hữu lượng dữ liệu về phim, diễn viên và đạo diễn, giúp quý khách dễ dàng chọn được phim mình yêu thích và nâng cao kiến thức về điện ảnh của bản thân. Ngoài ra, vào mỗi tháng, <a href="https://www.galaxycine.vn/"><strong>Galaxy Cinema</strong> </a>cũng giới thiệu các <a href="https://www.galaxycine.vn/phim-sap-chieu"><i>phim sắp chiếu</i></a> hot nhất trong mục <a href="https://www.galaxycine.vn/phim-hay"><i>Phim Hay Tháng</i> </a>để quý khách sớm có sự tính toán.</span></span>
+                        </span>
+                        </span>
+                    </p>
+        
+                    <p style="margin-top:0in; margin-right:0in; margin-bottom:10.0pt; margin-left:0in; text-align:justify"><span style="font-size:12pt"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"><span style="font-size:10.5pt"><span style="font-family:&quot;Cambria&quot;,&quot;serif&quot;">Hiện nay, <a href="https://www.galaxycine.vn/"><strong><span style="font-family:&quot;Cambria&quot;,&quot;serif&quot;">Galaxy Cinema</span>
+                        </strong>
+                        </a> đang ngày càng phát triển hơn nữa với các chương trình đặc sắc, các khuyến mãi hấp dẫn, đem đến cho khán giả những bộ phim bom tấn của thế giới và Việt Nam nhanh chóng và sớm nhất.</span>
+                        </span>
+                        </span>
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="footerAll">
+         <div class="footer_up bg-dark text-white " >
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-3">
+                <div style="font-size: 1.2rem; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                    <i class="far fa-address-card" style="color :orange"></i>
+                    Giới thiệu
+                </div>
+                <div class="footer">
+                  <p href="#" style="cursor: pointer;">
+                    <i class="fas fa-angle-double-right"></i>
+                    Về chúng tôi</p>
+                  <p href="#" style="cursor: pointer;">
+                    <i class="fas fa-angle-double-right"></i>
+                    Thỏa thuận hoạt động</p>
+                  <p href="#" style="cursor: pointer;">
+                    <i class="fas fa-angle-double-right"></i>
+                    Quy chế hoạt động</p>
+                  <p href="#" style="cursor: pointer;">
+                    <i class="fas fa-angle-double-right"></i>
+                    Chính sách</p>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div style="font-size: 1.2rem; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                  <i class="fas fa-film" style="color:orange"></i>
+                    Góc điện ảnh
+                </div>
+                <div class="footer">
+                  <p href="#" style="cursor: pointer;">
+                    <i class="fas fa-angle-double-right"></i>
+                    Thể loại phim</p>
+                  <p href="#" style="cursor: pointer;">
+                    <i class="fas fa-angle-double-right"></i>
+                    Bình luận phim</p>
+                  <p href="#" style="cursor: pointer;">
+                    <i class="fas fa-angle-double-right"></i>
+                    Blog điện ảnh</p>
+                  <p href="#" style="cursor: pointer;">
+                    <i class="fas fa-angle-double-right"></i>
+                    Phim hay tháng</p>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div style="font-size: 1.2rem; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                  <i class="far fa-paper-plane" style="color:orange"></i>
+                    Hỗ trợ
+                </div>
+                <div class="footer">
+                  <p href="#" style="cursor: pointer;">
+                    <i class="fas fa-angle-double-right"></i>
+                    Góp ý</p>
+                  <p href="#" style="cursor: pointer;">
+                    <i class="fas fa-angle-double-right"></i>
+                    Sale and Service</p>
+                  <p href="#" style="cursor: pointer;">
+                    <i class="fas fa-angle-double-right"></i>
+                    Rạp/Giá vé</p>
+                  <p href="#" style="cursor: pointer;">
+                    <i class="fas fa-angle-double-right"></i>
+                    Tuyển dụng</p>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div style="font-size: 1.2rem; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                  <i class="fas fa-link" style="color: orange;"></i>
+                    Kết nối
+                </div>
+                <div class="footer iconapp">
+                  <p><i class="fab fa-facebook-square"></i>Facebook</p>
+                  <p><i class="fab fa-youtube"></i>YouTube</p>
+                  <p><i class="fab fa-instagram"></i>Instagram</p>
+                </div>
+              </div>
+            </div>
+            <div class="" style="text-align: center;">
+              <a href="#"></a>
+              <img alt="" src="/images/glx_trade.png" width="150px" height="100%">
+            </div>
+          </div>
+         </div>
+         <div style="height: 0.05rem;">
+         </div>
+         <div class="footer_down bg-dark text-white" style="text-align: center;">
+           <p>Công Ty Cổ Phần Phim Thiên Ngân,
+            Tầng 5, Toà Nhà Mặt Trời Sông Hồng, 23 Phan Chu Trinh, Phường Phan Chu Trinh, Quận Hoàn Kiếm, Hà Nội</p>
+         </div>
+        </div>
+    </div>
+    <script src="./js_trangchu.js">
+    </script>
+</body>
+
+</html>

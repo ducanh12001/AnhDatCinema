@@ -1,0 +1,93 @@
+.breadcrumb-item a{
+    text-decoration: none !important;
+}
+.rowmain{
+    font-size: 100%;
+    display: block;
+    box-sizing: border-box;
+    margin-top: 1rem !important;
+    padding: 0;
+}
+.imgposter img{
+    width: 100%;
+    display: block;
+    float: right;
+}
+.imgposter{
+    float: left;
+}
+#text{
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    font-family: 'Lucida Sans';
+    color:black;
+    font-size: 1.2rem;
+}
+#text:after{
+    display: block;
+    content:'';
+    width: 50px;
+    height: 2px;
+    background-color: #f26b38;
+}
+form{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    height: 9.5rem;
+    border-radius: 5px;
+}
+form input,form button{
+    margin-top:1rem;
+    width: 70% !important;
+    height: 3rem;
+    align-items: center;
+}
+.phimsapchieu img{
+    width: 100%;
+}
+.information label{
+    color:#a0a3a7;;
+}
+.information a{
+    color: black;
+    text-decoration: none;
+}
+.information a:hover{
+    color: chocolate;
+}
+.button button{
+    display: block;
+    border-radius: 2px;
+    margin-top: 1rem;
+    width: auto;
+}
+
+
+
+ 
+a.star {
+    font-size: 24px;
+    color: #f0f1f4;
+    cursor: pointer;
+    line-height: 1;
+    transition: all 0.1s ease;
+}
+
+a.star.vote-hover {
+    color: #96e2fb;
+}
+
+a.star:active {
+    color: #56CCF2;
+}
+
+a.star.vote-active {
+    color: #0faef1;
+}
+
+.blue {
+    color: #0faef1;
+}
