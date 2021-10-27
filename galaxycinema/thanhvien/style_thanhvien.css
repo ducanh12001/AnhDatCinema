@@ -1,0 +1,40 @@
+.breadcrumb-item a{
+    text-decoration: none !important;
+}
+.rowmain{
+    font-size: 100%;
+    display: block;
+    box-sizing: border-box;
+    margin-top: 1rem !important;
+    padding: 0;
+}
+.header {
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    color: aliceblue;
+    background-color: black;
+    height: 3rem;
+    align-items: center;
+}
+.form-check{
+    display: inline-block;
+}
+.pass{
+    position: absolute;
+    bottom: 0rem;
+    width: 95%;
+}
+.info{
+    position: relative;
+}
+.passcheck1{
+    display:none;
+}
+.displayyes{
+    display: block;
+}
+.frame{
+    display: block;
+    margin-top: 1rem;
+}
