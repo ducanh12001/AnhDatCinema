@@ -1,0 +1,40 @@
+.container {
+    width: max-content;
+}
+
+fieldset {
+    background-color: #eee;
+    margin-bottom: 15px;
+}
+
+legend {
+    background-color: rgb(230, 90, 40);
+    color: whitesmoke;
+    padding: 5px 10px;
+}
+
+input {
+    margin: 5px;
+}
+
+.form-checkbox {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.form-group-bt {
+    margin-top: 25px;
+}
+
+.form-bt {
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #f26b38;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.form-bt:hover {
+    background-color: rgb(240, 100, 20);
+}

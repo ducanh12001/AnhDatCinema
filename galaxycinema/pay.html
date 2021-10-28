@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Thanh toán</title>
+    <link rel="stylesheet" href="css/pay.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Thanh toán</h1>
+        <form class="form" action="" method="GET">
+            <fieldset>
+                <legend>Thông tin khách: </legend>
+                <label for="name">Họ và tên: </label>
+                <input type="text" name="cname" id="">
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="">
+                <label for="phone">SĐT: </label>
+                <input type="tel" name="phone" id="">
+            </fieldset>
+            <fieldset>
+                <legend>Thanh toán: </legend>
+                <label>Phương thức thanh toán</label>
+                <select> 
+                    <option selected="selected">Chọn</option>
+                    <option>Tiền mặt</option>
+                    <option>Momo</option>
+                </select>
+                <div class="form-checkbox">
+                    <label>
+                        <input type="checkbox" class="isAccept" name="">
+                        <a class="">
+                            Tôi đồng ý với điều khoản sử dụng và mua vé cho người có độ tuổi phù hợp
+                        </a>
+                    </label>
+                </div>
+            </fieldset>
+            <div class="form-group-bt">
+                <a class="form-bt bt-back" href="booking.html">Back</a>
+                <a class="form-bt bt-cont" href="">Thanh toán</a>
+            </div>
+        </form>
+    </div>
+</body>

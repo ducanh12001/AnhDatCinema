@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Booking</title>
+    <link rel="stylesheet" href="css/booking.css">
+</head>
+<body>
+    <div class="container">
+        <div class="seat-container">
+            <div class="screen">Screen</div>
+            <div class="row">
+                <div id="seat" class="seat" onclick="selectSeat(this)">A1</div>
+                <div id="seat" class="seat" onclick="selectSeat(this)">A2</div>
+                <div id="seat" class="seat" onclick="selectSeat(this)">A3</div>
+                <div id="seat" class="seat" onclick="selectSeat(this)">A4</div>
+                <div id="seat" class="seat" onclick="selectSeat(this)">A5</div>
+                <div id="seat" class="seat" onclick="selectSeat(this)">A6</div>
+                <div id="seat" class="seat" onclick="selectSeat(this)">A7</div>
+                <div id="seat" class="seat" onclick="selectSeat(this)">A8</div>
+                <div id="seat" class="seat" onclick="selectSeat(this)">A9</div>
+            </div>
+            <div class="row">
+                <div id="seat" class="seat" onclick="selectSeat(this)">B1</div>
+                <div id="seat" class="seat" onclick="selectSeat(this)">B2</div>
+                <div id="seat" class="seat" onclick="selectSeat(this)">B3</div>
+                <div id="seat" class="seat" onclick="selectSeat(this)">B4</div>
+                <div id="seat" class="seat" onclick="selectSeat(this)">B5</div>
+                <div id="seat" class="seat" onclick="selectSeat(this)">B6</div>
+                <div id="seat" class="seat" onclick="selectSeat(this)">B7</div>
+                <div id="seat" class="seat" onclick="selectSeat(this)">B8</div>
+                <div id="seat" class="seat" onclick="selectSeat(this)">B9</div>
+            </div>
+            <div class="row">
+                <div id="seat" class="seat" onclick="selectSeat(this)">C1</div>
+                <div id="seat" class="seat" onclick="selectSeat(this)">C2</div>
+                <div id="seat" class="seat" onclick="selectSeat(this)">C3</div>
+                <div id="seat" class="seat" onclick="selectSeat(this)">C4</div>
+                <div id="seat" class="seat" onclick="selectSeat(this)">C5</div>
+                <div id="seat" class="seat" onclick="selectSeat(this)">C6</div>
+                <div id="seat" class="seat" onclick="selectSeat(this)">C7</div>
+                <div id="seat" class="seat" onclick="selectSeat(this)">C8</div>
+                <div id="seat" class="seat" onclick="selectSeat(this)">C9</div>
+            </div>
+            <div class="row">
+                <div id="seat" class="seat" onclick="selectSeat(this)">D1</div>
+                <div id="seat" class="seat" onclick="selectSeat(this)">D2</div>
+                <div id="seat" class="seat" onclick="selectSeat(this)">D3</div>
+                <div id="seat" class="seat" onclick="selectSeat(this)">D4</div>
+                <div id="seat" class="seat" onclick="selectSeat(this)">D5</div>
+                <div id="seat" class="seat" onclick="selectSeat(this)">D6</div>
+                <div id="seat" class="seat" onclick="selectSeat(this)">D7</div>
+                <div id="seat" class="seat" onclick="selectSeat(this)">D8</div>
+                <div id="seat" class="seat" onclick="selectSeat(this)">D9</div>
+            </div>
+            <div class="row">
+                <div id="seat" class="seat" onclick="selectSeat(this)"></div>
+                <div id="seat" class="seat" onclick="selectSeat(this)"></div>
+                <div id="seat" class="seat" onclick="selectSeat(this)"></div>
+                <div id="seat" class="seat" onclick="selectSeat(this)"></div>
+                <div id="seat" class="seat" onclick="selectSeat(this)"></div>
+                <div id="seat" class="seat" onclick="selectSeat(this)"></div>
+                <div id="seat" class="seat" onclick="selectSeat(this)"></div>
+                <div id="seat" class="seat" onclick="selectSeat(this)"></div>
+                <div id="seat" class="seat" onclick="selectSeat(this)"></div>
+            </div>
+            <div class="row">
+                <div id="seat" class="seat" onclick="selectSeat(this)"></div>
+                <div id="seat" class="seat" onclick="selectSeat(this)"></div>
+                <div id="seat" class="seat" onclick="selectSeat(this)"></div>
+                <div id="seat" class="seat" onclick="selectSeat(this)"></div>
+                <div id="seat" class="seat" onclick="selectSeat(this)"></div>
+                <div id="seat" class="seat" onclick="selectSeat(this)"></div>
+                <div id="seat" class="seat" onclick="selectSeat(this)"></div>
+                <div id="seat" class="seat" onclick="selectSeat(this)"></div>
+                <div id="seat" class="seat" onclick="selectSeat(this)"></div>
+            </div>
+            <div class="row">
+                <div id="seat" class="seat" onclick="selectSeat(this)"></div>
+                <div id="seat" class="seat" onclick="selectSeat(this)"></div>
+                <div id="seat" class="seat" onclick="selectSeat(this)"></div>
+                <div id="seat" class="seat" onclick="selectSeat(this)"></div>
+                <div id="seat" class="seat" onclick="selectSeat(this)"></div>
+                <div id="seat" class="seat" onclick="selectSeat(this)"></div>
+                <div id="seat" class="seat" onclick="selectSeat(this)"></div>
+                <div id="seat" class="seat" onclick="selectSeat(this)"></div>
+                <div id="seat" class="seat" onclick="selectSeat(this)"></div>
+            </div>
+        </div>
+        <div class="seat-note">
+            <ul class="showcase">
+                <li>
+                  <div id="seat" class="seat"></div>
+                  <small class="status" style="font-size: 1em;">Ghế trống</small>
+                </li>
+                <li>
+                  <div id="seat" class="seat selected"></div>
+                  <small class="status" style="font-size: 1em;">Đã chọn</small>
+                </li>
+                <li>
+                  <div id="seat" class="seat occupied"></div>
+                  <small class="status" style="font-size: 1em;">Đang chọn</small>
+                </li>
+              </ul>
+        </div>
+        <div class="ticket-details">
+            <div class="ticket-info">
+                <p>Tên phim: </p>
+                <p>Rạp: </p>
+                <p>Suất chiếu: </p>
+                <p>Phòng chiếu: </p>
+                <p>Combo: </p>
+                <p>Ghế: </p>
+                <p>Tổng: </p>
+            </div>
+            <div class="progress">
+                <a class="bt-step bt-back" href="">Back</a>
+                <a class="bt-step bt-cont" href="pay.html">Cont</a>
+            </div>
+        </div>
+    </div>
+</body>
