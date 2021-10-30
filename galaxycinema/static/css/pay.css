@@ -1,23 +1,30 @@
-.container {
+.pay-container {
     width: max-content;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 50px 50px;
 }
 
-fieldset {
+.pay-container fieldset {
     background-color: #eee;
     margin-bottom: 15px;
+    border: 2px gray groove;
+    padding: 10px;
 }
 
-legend {
+.pay-container legend {
     background-color: rgb(230, 90, 40);
     color: whitesmoke;
-    padding: 5px 10px;
+    padding: 0px 10px;
+    width: initial;
+    font-size: 18px;
+    margin-left: 20px;
 }
 
-input {
+.pay-container input {
     margin: 5px;
 }
 
-.form-checkbox {
+.pay-container .form-checkbox {
     margin-top: 15px;
     font-size: 14px;
 }
@@ -37,4 +44,6 @@ input {
 
 .form-bt:hover {
     background-color: rgb(240, 100, 20);
+    text-decoration: none;
+    color: black;
 }
