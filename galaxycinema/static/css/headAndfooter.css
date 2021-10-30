@@ -1,0 +1,54 @@
+.footer_down{
+    text-align: center;
+}
+.footer p{
+    cursor: pointer;
+    display: block;
+}
+.text_intro{
+    font-size: 1.2rem; 
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:orange !important;
+}
+.imgfooter{
+    text-align: center;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-brand img {
+    width: 250px;
+    height: 40px;
+    padding-left: 20px;
+}
+
+.navbar-nav li
+{
+    padding: 0 10px;
+}
+
+#nav-bar ul li a:hover
+{
+    color: #007bff!important
+}
+
+.navbar
+{
+    background: #fff;
+}
+
+.navbar-toggler
+{
+    border: none!important;
+}
+
+.nav-link
+{
+    color: #555!important;
+    font-weight: 600;
+    font-size: 16px;
+}

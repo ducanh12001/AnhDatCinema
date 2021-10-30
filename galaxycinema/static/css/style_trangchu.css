@@ -96,3 +96,12 @@
     height: 2px;
     background-color: #f26b38;
 }
+
+.rounded{
+  width: 100%;
+  height: 100%;
+  height: auto;
+}
+.buttonfilm{
+  width: 30% !important;
+}
