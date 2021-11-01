@@ -16,7 +16,7 @@
 <body>
     <section id="nav-bar">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#"><img src="/galaxycinema/static/images/galaxy-logo.png"></a>
+            <a class="navbar-brand" href="trangchuLog.html"><img src="/galaxycinema/static/images/galaxy-logo.png"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -43,8 +43,8 @@
                         <a class="dropdown-item" href="#">Bình luận phim</a>
                         <a class="dropdown-item" href="#">Blog điện ảnh</a>
                     </div>
-                  </li>
-                  <li class="nav-item dropdown">
+                </li>
+                <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       Sự kiện
                     </a>
@@ -52,21 +52,28 @@
                       <a class="dropdown-item" href="#">Ưu đãi</a>
                       <a class="dropdown-item" href="#">Phim hay tháng</a>
                     </div>
-                  </li>
-                  <li class="nav-item">
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="#">Rạp/Giá vé</a>
-                  </li>
-                  <li class="nav-item">
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="#">Hỗ trợ</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Thành viên</a>
-                  </li>
+                </li>
               </ul>
-              <div class="" style="padding-right: 30px;">
-                <a href="/galaxycinema/templates/main_thanhvien.html" class="btn-login"><i class='fa fa-user-circle'></i></a>
-                <a href="/galaxycinema/templates/main_thanhvien.html" class="btn-join">Ngô Quang Đạt</a>
-              </div>
+              <ul class="navbar-nav" style="margin-right: 150px;">
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="ProfileMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class='fa fa-user-circle'></i>
+                            <span class="username"></span>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="ProfileMenuButton">
+                            <a class="dropdown-item" href="main_thanhvien.html">Tài khoản</a>
+                            <a class="dropdown-item" href="trangchu.html">Đăng xuất</a>
+                        </div>
+                    </div>
+                </li>
+              </ul>
             </div>
         </nav>
     </section>

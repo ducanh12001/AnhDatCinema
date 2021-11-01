@@ -10,12 +10,11 @@
 }
 .header {
     text-transform: uppercase;
-    display: block;
-    text-align: center;
     color: aliceblue;
     background-color: black;
-    height: 3rem;
-    align-items: center;
+    padding: 10px;
+    justify-content: center;
+    margin-top: 20px;
 }
 .form-check{
     display: inline-block;
@@ -28,7 +27,7 @@
 .info{
     position: relative;
 }
-.passcheck1{
+.passcheck{
     display:none;
 }
 .displayyes{
