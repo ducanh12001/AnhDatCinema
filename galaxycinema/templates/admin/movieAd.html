@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADMIN</title>
+    <link rel="stylesheet" href="/galaxycinema/static/css/admin.css">
+    <link rel="stylesheet" href= "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!---admin-->
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="admin.html">
+                        <span class="title"><h2>ADMIN</h2></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="admin.html">
+                        <span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="rapAd.html">
+                        <span class="icon"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></span>
+                        <span class="title">Movie Theaters</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="movieAd.html">
+                        <span class="icon"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></span>
+                        <span class="title">Movies</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="showtimeAd.html">
+                        <span class="icon"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></span>
+                        <span class="title">Show Timings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="userAd.html">
+                        <span class="icon"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></span>
+                        <span class="title">Users</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="bookingAd.html">
+                        <span class="icon"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></span>
+                        <span class="title">Booking</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="passAd.html">
+                        <span class="icon"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></span>
+                        <span class="title">Update Password</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/galaxycinema/templates/login.html">
+                        <span class="icon"><i class="fa fa-sign-out" aria-hidden="true"></i></span>
+                        <span class="title">Sign out</span>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+    <!--main-->
+    <div class="main">
+        <div class="topbar">
+            <div class="user">
+                <img>
+            </div>
+        </div>
+        <div class="list">
+            <div class="row">
+                <h3>Danh sách phim</h3>
+                <button class="add" onclick="openAdd();">Thêm phim</button>
+            </div>
+            <div class="listBox">
+                <table>
+                    <thead>
+                        <tr>
+                            <td>STT</td>
+                            <td>Tên phim</td>
+                            <td>Poster</td>
+                            <td>Quốc gia</td>
+                            <td>Thể loại</td>
+                            <td>Đạo diễn</td>
+                            <td>Diễn viên</td>
+                            <td>Ngày ra rạp</td>
+                            <td>Trailer</td>
+                            <td>Action</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Eternal</td>
+                            <td><img></td>
+                            <td>Mỹ</td>
+                            <td>Hành động</td>
+                            <td>Chloé Zhao</td>
+                            <td>NQĐ</td>
+                            <td>19/11/2021</td>
+                            <td>Trailer</td>
+                            <td class="btn-group">
+                                <button class="btn fix">Sửa</button>
+                                <button class="btn delete">Xóa</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="add-container" id="add">
+        <div class="add-content">
+            <div class="close">x</div>
+            <h2>Thêm phim</h2>
+            <div>
+                <div class="row">
+                    <b>Tên phim: </b>
+                    <input type="text" class="">
+                </div>
+                <div class="row">
+                    <b>Poster: </b>
+                    <input type="file" class="">
+                </div>
+                <div class="row">
+                    <b>Quốc gia: </b>
+                    <input type="text" class="">
+                </div>
+                <div class="row">
+                    <b>Thể loại: </b>
+                    <input type="text" class="">
+                </div>
+                <div class="row">
+                    <b>Đạo diễn: </b>
+                    <input type="text" class="">
+                </div>
+                <div class="row">
+                    <b>Diễn viên: </b>
+                    <input type="text" class="">
+                </div>
+                <div class="row">
+                    <b>Ngày ra rạp: </b>
+                    <input type="date" class="">
+                </div>
+                <div class="row">
+                    <b>Trailer: </b>
+                    <input type="url" class="" placeholder="http://youtube.com/watch">
+                </div>
+                <button class="btn add">Thêm</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        function openAdd() {
+            var x = document.getElementById('add');
+            if (x.style.display = "none") {
+                x.style.display = "flex";
+            } else {
+                x.style.display = "none";
+            }
+        };
+
+        document.querySelector('.close').addEventListener("click", function() {
+	        document.querySelector('.add-container').style.display = "none";
+        });
+    </script>
+</body>
+</html>
