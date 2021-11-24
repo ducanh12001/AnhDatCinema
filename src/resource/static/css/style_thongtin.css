@@ -70,3 +70,26 @@ form input,form button{
     width: auto;
     float: right;
 }
+
+/*picktime*/
+.calender-box {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.time-list {
+    border: 1px solid black;
+    padding: 10px;
+    width: fit-content;
+}
+
+.time-list .showtime {
+    border: 1px solid black;
+    padding: 3px;
+}
+
+.time-list .showtime:hover {
+    background-color: cornflowerblue;
+    cursor: pointer;
+    text-decoration: none;
+}
