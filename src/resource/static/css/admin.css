@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.navigation {
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background: rgb(59, 154, 192);
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.navigation ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.navigation ul li {
+    position: relative;
+    width: 100%;
+    list-style: none;
+}
+
+.navigation ul li:hover {
+    background: rgb(25, 111, 145);
+}
+
+.navigation ul li:nth-child(1) {
+    margin-bottom: 5px;
+}
+
+.navigation ul li:nth-child(1):hover {
+    background: transparent;
+}
+
+.navigation ul li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: white;
+    padding-left: 10px;
+}
+
+.navigation ul li a .icon {
+    position: relative;
+    display: block;
+    min-height: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.navigation ul li a .icon .fa {
+    color: white;
+    font-size: 15px;
+}
+
+.navigation ul li a .title {
+    position: relative;
+    display: block;
+    padding: 0 10px;
+    height: 50px;
+    line-height: 50px;
+    white-space: nowrap;
+}
+
+.main {
+    position: absolute;
+    width: calc(100% - 200px);
+    left: 200px;
+    min-height: 100vh;
+    background: whitesmoke;
+    transition: 0.5s;
+}
+
+.main .topbar {
+    width: 100%;
+    background: white;
+    height: 60px;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user {
+    position: relative;
+    min-width: 30px;
+    width: 30px;
+    height: 30px;
+    border-radius: 30%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.user img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cardBox {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.cardBox .card {
+    position: relative;
+    background: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.cardBox .card .numbers {
+    position: relative;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.cardBox .card .cardName {
+    color: #999;
+}
+
+.cardBox .card .iconBox {
+    font-size: 2.5em;
+    color: rgb(45, 148, 233);
+}
+
+/*rapAd*/
+.list {
+    position: relative;
+    margin: 50px;
+    background: white;
+    border: 1px solid gray;
+}
+
+.list .row {
+    height: 50px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.list .row .add {
+    padding: 4px;
+    border: 1px solid black;
+    background: rgb(97, 156, 235);
+}
+
+.list .row .add:hover {
+    background:rgb(79, 86, 185);
+    cursor: pointer;
+}
+
+.list .listBox {
+    padding: 10px 20px;
+}
+
+.list .listBox table {
+    width: 100%;
+}
+
+.list .listBox table tr td{
+    padding: 5px;
+    text-align: center;
+}
+
+.list .listBox table thead tr {
+    font-weight: bold;
+    background-color: antiquewhite;
+}
+
+.list .listBox table tbody tr:nth-child(odd) {
+    background-color: aliceblue;
+}
+
+.btn {
+    padding: 4px;
+    border: 1px solid black;
+}
+
+.list .btn.delete {
+    margin-left: 10px;
+    background-color: rgb(223, 84, 84);
+}
+
+.list .btn.delete:hover {
+    background-color: rgb(179, 61, 61);
+    cursor: pointer;
+}
+
+.list .listBox table .btn.fix:hover {
+    background-color: rgb(179, 173, 173);
+    cursor: pointer;
+}
+
+.add-container {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.add-content {
+    position: relative;
+    width: 400px;
+    height: fit-content;
+    background-color: white;
+    border-radius: 4px;
+    padding: 20px;
+}
+
+.add-content .row {
+    display: absolute;
+    margin: 15px;
+}
+
+.add-content input {
+    padding: 3px;
+}
+
+.add-content .btn.add {
+    background: rgb(97, 156, 235);
+    float: right;
+    font-size: 15px;
+}
+
+.add-content .btn.add:hover {
+    background:rgb(79, 86, 185);
+    cursor: pointer;
+}
+
+.add-content .close {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/*passAd*/
+#reset {
+    display: inline-block;
+    margin: 10px;
+}
+
+#reset input {
+    margin-left: 20px;
+    width: 300px;
+}
+
+#reset input:hover {
+    border: 1.5px solid;
+}
+
+#reset button {
+    background-color: rgb(128, 186, 238);
+    padding: 8px;
+}
+
+#reset button:hover {
+    background-color: rgb(55, 96, 209);
+    cursor: pointer;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Thanh toán</title>
+    <link rel="stylesheet" href="/css/pay.css">
+    <link rel="stylesheet" href="/css/headAndfooter.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href= "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <section id="nav-bar">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#"><img src="/images/galaxy-logo.png"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Phim
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Phim đang chiếu</a>
+                    <a class="dropdown-item" href="#">Phim sắp chiếu</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Góc điện ảnh
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Thể loại phim</a>
+                        <a class="dropdown-item" href="#">Diễn viên</a>
+                        <a class="dropdown-item" href="#">Đạo diễn</a>
+                        <a class="dropdown-item" href="#">Bình luận phim</a>
+                        <a class="dropdown-item" href="#">Blog điện ảnh</a>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Sự kiện
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">Ưu đãi</a>
+                      <a class="dropdown-item" href="#">Phim hay tháng</a>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Rạp/Giá vé</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Hỗ trợ</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Thành viên</a>
+                  </li>
+              </ul>
+              <div class="" style="padding-right: 30px;">
+                <a href="/templates/login.html" class="btn-login">Đăng nhập</a>
+                <span> | </span>
+                <a href="/templates/dangky.html" class="btn-join">Đăng ký</a>
+              </div>
+            </div>
+        </nav>
+    </section>
+    <!--payment-->
+    <div class="pay-container">
+      <h1>Thanh toán</h1>
+      <form class="form" action="" method="GET">
+          <fieldset>
+              <legend>Thông tin khách: </legend>
+              <label for="name">Họ và tên: </label>
+              <input type="text" name="cname" id="">
+              <label for="email">Email: </label>
+              <input type="email" name="email" id="">
+              <label for="phone">SĐT: </label>
+              <input type="tel" name="phone" id="">
+          </fieldset>
+          <fieldset>
+              <legend>Thanh toán: </legend>
+              <label>Phương thức thanh toán</label>
+              <select> 
+                  <option selected="selected">Chọn</option>
+                  <option>Tiền mặt</option>
+                  <option>Momo</option>
+              </select>
+              <div class="form-checkbox">
+                  <label>
+                      <input type="checkbox" class="isAccept" name="">
+                      <a class="">
+                          Tôi đồng ý với điều khoản sử dụng và mua vé cho người có độ tuổi phù hợp
+                      </a>
+                  </label>
+              </div>
+          </fieldset>
+          <div class="form-group-bt">
+              <a class="form-bt bt-back" href="booking.html">Back</a>
+              <a class="form-bt bt-cont" href="">Thanh toán</a>
+          </div>
+      </form>
+    </div>
+</body>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADMIN</title>
+    <link rel="stylesheet" href="/css/admin.css">
+    <link rel="stylesheet" href= "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!---admin-->
+    <% var log %>
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="/admin/<%= log.UserToken %>" >
+                        <span class="title"><h2>ADMIN</h2></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/admin/<%= log.UserToken %>">
+                        <span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/admin/<%= log.UserToken %>/rap">
+                        <span class="icon"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></span>
+                        <span class="title">Movie Theaters</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/admin/<%= log.UserToken %>/phim">
+                        <span class="icon"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></span>
+                        <span class="title">Movies</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/admin/<%= log.UserToken %>/time">
+                        <span class="icon"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></span>
+                        <span class="title">Show Timings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/admin/<%= log.UserToken %>/users">
+                        <span class="icon"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></span>
+                        <span class="title">Users</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/admin/<%= log.UserToken %>/booking">
+                        <span class="icon"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></span>
+                        <span class="title">Booking</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/admin/<%= log.UserToken %>/update">
+                        <span class="icon"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></span>
+                        <span class="title">Update Password</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/login">
+                        <span class="icon"><i class="fa fa-sign-out" aria-hidden="true"></i></span>
+                        <span class="title">Sign out</span>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+    <!--main-->
+    <div class="main">
+        <div class="topbar">
+            <div class="user">
+                <img>
+            </div>
+        </div>
+        <% var users %>
+        <% var raps %>
+        <% var phims %>
+        <% var ves %>
+        <div class="cardBox">
+            <div class="card">
+                <div>
+                    <div class="numbers"><%= users %></div>
+                    <div class="cardName">Users</div>
+                </div>
+                <div class="iconBox">
+                    <i class="fa fa-user-o" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <div class="numbers"><%= raps %></div>
+                    <div class="cardName">Theatres</div>
+                </div>
+                <div class="iconBox">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <div class="numbers"><%= phims %></div>
+                    <div class="cardName">Movies</div>
+                </div>
+                <div class="iconBox">
+                    <i class="fa fa-film" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <div class="numbers"><%= ves %></div>
+                    <div class="cardName">Bookings</div>
+                </div>
+                <div class="iconBox">
+                    <i class="fa fa-ticket" aria-hidden="true"></i>
+                </div>
+            </div>  
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        
+    </script>
+</body>
+</html>

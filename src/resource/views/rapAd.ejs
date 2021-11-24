@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADMIN</title>
+    <link rel="stylesheet" href="/css/admin.css">
+    <link rel="stylesheet" href= "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!---admin-->
+    <% var log %>
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="/admin/<%= log.UserToken %>" >
+                        <span class="title"><h2>ADMIN</h2></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/admin/<%= log.UserToken %>">
+                        <span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/admin/<%= log.UserToken %>/rap">
+                        <span class="icon"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></span>
+                        <span class="title">Movie Theaters</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/admin/<%= log.UserToken %>/phim">
+                        <span class="icon"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></span>
+                        <span class="title">Movies</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/admin/<%= log.UserToken %>/time">
+                        <span class="icon"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></span>
+                        <span class="title">Show Timings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/admin/<%= log.UserToken %>/users">
+                        <span class="icon"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></span>
+                        <span class="title">Users</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/admin/<%= log.UserToken %>/booking">
+                        <span class="icon"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></span>
+                        <span class="title">Booking</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/admin/<%= log.UserToken %>/update">
+                        <span class="icon"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></span>
+                        <span class="title">Update Password</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/login">
+                        <span class="icon"><i class="fa fa-sign-out" aria-hidden="true"></i></span>
+                        <span class="title">Sign out</span>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="topbar">
+            <div class="user">
+                <img>
+            </div>
+        </div>
+        <div class="list">
+            <div class="row">
+                <h3>Danh sách rạp</h3>
+                <button class="add" onclick="openAdd();">Thêm rạp</button>
+            </div>
+            <div class="listBox">
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Tên Rạp</th>
+                            <th>Loại Rạp</th>
+                            <th>KT Ngang</th>
+                            <th>KT Dọc</th>
+                            <th>Cụm rạp Id</th>
+                            <th>Xóa</th>
+                        </tr>
+                        </thead>
+                        <tfoot>
+                        <tr>
+                            <th>ID</th>
+                            <th>Tên Rạp</th>
+                            <th>Loại Rạp</th>
+                            <th>KT Ngang</th>
+                            <th>KT Dọc</th>
+                            <th>Cụm rạp Id</th>
+                            <th>Xóa</th>
+                        </tr>
+    
+                        </tfoot>
+                        <tbody>
+                        <% Rap.map(item =>{ %>
+                            <tr>
+                                <td><%= item.id %></td>
+                                <td><%= item.TenRap %></td>
+                                <td><%= item.LoaiRap %></td>
+                                <td><%= item.KTNgang %></td>
+                                <td><%= item.KTDoc %></td>
+                                <td><%= item.cumrapId %></td>
+                                <td>
+                                    <form method="POST" action="/admin/<%= log.UserToken %>/rap/delete/<%= item.id %>">
+                                        <button type="submit" class="btn btn-danger btn-circle btn-sm">
+                                            <i class="fas fa-trash"></i>
+                                        </button>
+                                    </form>
+                                </td>
+                            </tr>
+                        <% }) %>
+                        </tbody>
+                </table>
+                
+            </div>
+        </div>
+    </div>
+    
+    <div class="add-container" id="add">
+        <form action="/admin/<%= log.UserToken %>/rap/insert" method="post" >
+        <div class="add-content">
+            <div class="close">x</div>
+            <h2>Thêm rạp</h2>
+            <div>
+                <div class="row">
+                    <b>Tên Rạp</b>
+                    <input type="text" name="tenrap" class="">
+                </div>
+                <div class="row">
+                    <b>Loại Rạp</b>
+                    <input type="text"  name="loairap"class="">
+                </div>
+                <div class="row">
+                    <b>kích thước ngang</b>
+                    <input type="text" name="ktngang"class="">
+                </div>
+                <div class="row">
+                    <b>kích thước dọc</b>
+                    <input type="text" name="ktdoc" class="">
+                </div>
+                <div class="row">
+                    <b>cụm rạp id</b>
+                    <input type="text" name="cumrapid" class="">
+                </div>
+                <div class="row">
+                    <button class="btn add">Thêm</button>
+                </div>
+            </div>
+        </div>
+         </form>
+        <form action="/admin/<%= log.UserToken %>/phim/insert" method="post" ></form>
+    </div>
+
+    <script type="text/javascript">
+        function openAdd() {
+            var x = document.getElementById('add');
+            if (x.style.display = "none") {
+                x.style.display = "flex";
+            } else {
+                x.style.display = "none";
+            }
+        };
+
+        document.querySelector('.close').addEventListener("click", function() {
+	        document.querySelector('.add-container').style.display = "none";
+        });
+    </script>
+</body>
+</html>
